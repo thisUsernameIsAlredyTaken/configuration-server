@@ -1,0 +1,10 @@
+server:
+  port: 7070
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
