@@ -14,3 +14,8 @@ management:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
   prefix: /r
+#hystrix:
+#  metrics:
+#    polling-interval-ms: 3500
+#ribbon:
+#  ReadTimeout: 3000

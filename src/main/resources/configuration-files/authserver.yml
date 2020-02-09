@@ -8,3 +8,12 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nc_security
+    username: postgres
+    password: "{cipher}5c5930aff2dbe1d84c98689e07bff329ade5a1a4127619a57d073e85222be68a"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
