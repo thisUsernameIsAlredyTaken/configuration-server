@@ -12,8 +12,15 @@ management:
       exposure:
         include: "*"
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
+  sensitive-headers:
   prefix: /r
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeOutInMilliseconds: 7000
 #hystrix:
 #  metrics:
 #    polling-interval-ms: 3500
