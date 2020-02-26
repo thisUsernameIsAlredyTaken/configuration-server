@@ -12,7 +12,8 @@ management:
       exposure:
         include: "*"
 zuul:
-  sensitive-headers:
+  sensitive-headers: Cooke, Set-Cookie
+  ignore-headers: "*"
   prefix: /r
 hystrix:
   command:
@@ -21,8 +22,5 @@ hystrix:
         isolation:
           thread:
             timeOutInMilliseconds: 7000
-#hystrix:
-#  metrics:
-#    polling-interval-ms: 3500
 ribbon:
   ReadTimeout: 7000
